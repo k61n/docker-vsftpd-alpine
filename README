@@ -1,0 +1,2 @@
+docker build --build-arg USERNAME=user --build-arg PASSWORD=password . -t ftp-alpine
+docker run -d -p 21:21 -p 30000-30010:30000-30010 -v /mypool/data:/home/user/share --name ftp ftp-alpine
